@@ -1,0 +1,44 @@
+ALGORITHM length_of_the_sentence
+VAR
+    str := STRING = "the best of the world"
+    count := INTEGER :=0;
+BEGIN
+   For ( i:=0; i< str.length ; i++ ) DO 
+   IF (str.charAt[i] != ' ']) THEN
+    count++;
+   END_IF
+END_FOR 
+   write (count)
+END
+
+
+
+
+ALGORITHM number_of_words
+VAR
+    i , count := INTEGER :=1;
+    str := STRING = "the best of the world"
+BEGIN
+  For ( i in str ) DO
+     IF (i== ' ') THEN
+     count++;
+     END_IF
+  END_FOR
+  write(count)
+END
+
+
+
+
+ALGORITHM vowels_part
+VAR
+    v := ['a' , 'e' , 'o' , 'u' , 'i' , 'y'] := CHAR;
+    str := STRING := "the best of the world";
+    count := INTEGER :=0;
+BEGIN
+    for (i in str) DO
+    IF (v[i] in str[i]) THEN
+        count++;
+    END_IF
+    write (count)
+END
